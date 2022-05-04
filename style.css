@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --text-color: hsl(var(--base-color), 100%, 35%);
+  --base-color:80;
+  --bg-second-color: hsl(var(--base-color), 97%, 31%);
+  --bg-primary-color: hsl(var(--base-color), 9%, 89%);
+  --icon-color: hsl(var(--base-color), 100%, 50%);
+}
+body{
+  background-color: #ffffff;
+  color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  display: grid;
+  min-height: 100vh;
+}
+main{
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  gap: 19rem;
+  justify-content: center;
+  text-shadow: #ffffff 6px 2px 5px;
+}
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+button svg{
+  width: 4.8rem;
+  
+}
+.hide{
+  display: none;
+}
+.play svg path,
+.pause svg path,
+.stop svg path,
+.increase svg path,
+.decrease svg path {
+  fill: var(--icon-color);
+  
+}
+.timer{
+  font-size: 12.5rem;
+  display: flex;
+  margin-bottom: 1.6rem;
+  width: 32rem;
+  height: 15rem;
+  
+}
+.controls{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  border-radius: 100rem;
+  width: 31rem;
+  height: 6rem;
+  padding: 0 2rem;
+  
+}
+.cards {
+  
+  gap: 3.2rem;
+  display: grid;
+  
+  justify-content: space-around;
+  grid-template-areas:
+    "A B"
+    "C D";
+}
+.card:nth-child(1) {
+  grid-area: A;
+}
+.card:nth-child(2) {
+  grid-area: B;
+}
+.card:nth-child(3) {
+  grid-area: C;
+}
+.card:nth-child(4) {
+  grid-area: D;
+}
+.card{
+  background-color: var(--bg-primary-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 2.4rem;
+  width: 14rem;
+  height: 15rem;
+  text-align: center;
+  position: relative;
+}
+.card svg{
+  position: absolute;
+  top: 4.6rem;
+  right: 4.6rem;
+}
+.card:hover, .card:hover svg path, .card.active svg path, .card.active{
+  opacity: 0.8;
+  transition: .4s;
+  background-color: var(--bg-second-color);
+  fill: #ffffff;
+}
+button:hover svg path{
+  transition: .4s;
+  opacity: 0.5;
+  fill: black;
+}
+.container1{
+  margin: 4.5rem 0;
+}
+.bgNature, .bgRain, .bgCoffee, .bgFire {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.modes{
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+}
+.body.active{
+  background-color: #000;
+}
