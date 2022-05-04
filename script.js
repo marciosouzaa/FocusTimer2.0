@@ -178,7 +178,11 @@ const bgAudioNature = new Audio('./sounds/floresta.mp3')
 const bgAudioRain = new Audio('./sounds/chuva.mp3')
 const bgAudioCoffee = new Audio('./sounds/cafeteria.mp3')
 const bgAudioFire = new Audio('./sounds/lareira.mp3')
-bgAudio.loop = true
+
+bgAudioNature.loop = true
+bgAudioRain.loop = true
+bgAudioCoffee.loop = true
+bgAudioFire.loop = true
 function pressButton() {
   buttonPressAudio.play()
 }
