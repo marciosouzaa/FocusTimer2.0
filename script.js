@@ -174,10 +174,10 @@ const buttonPressAudio = new Audio(
 const kitchenTimer = new Audio(
   'https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true'
 )
-const bgAudioNature = new Audio('./sounds/floresta.wav')
-const bgAudioRain = new Audio('./sounds/chuva.wav')
-const bgAudioCoffee = new Audio('./sounds/cafeteria.wav')
-const bgAudioFire = new Audio('./sounds/lareira.wav')
+const bgAudioNature = new Audio('./sounds/floresta.mp3')
+const bgAudioRain = new Audio('./sounds/chuva.mp3')
+const bgAudioCoffee = new Audio('./sounds/cafeteria.mp3')
+const bgAudioFire = new Audio('./sounds/lareira.mp3')
 bgAudio.loop = true
 function pressButton() {
   buttonPressAudio.play()
