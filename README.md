@@ -1,3 +1,3 @@
 # FocusTimer2.0
  
-https://marciosouzaa.github.io/FocusTimer2.0/
+https://focus-timer-2.netlify.app/
