@@ -18,6 +18,10 @@ const bgCoffee = document.querySelector('.bgCoffee')
 const bgFire = document.querySelector('.bgFire')
 const bgDarkMode = document.querySelector('.body')
 const bgLightkMode = document.querySelector('.body')
+const volNature = document.querySelector('.vol.natureVol')
+const volRain = document.querySelector('.vol.rainVol')
+const volCoffee = document.querySelector('.vol.coffeeVol')
+const volFire = document.querySelector('.vol.fireVol')
 
 //timer
 let timerTimeOut
@@ -183,6 +187,10 @@ bgAudioNature.loop = true
 bgAudioRain.loop = true
 bgAudioCoffee.loop = true
 bgAudioFire.loop = true
+bgAudioNature.volume = 0.5
+bgAudioRain.volume = 0.5
+bgAudioCoffee.volume = 0.5
+bgAudioFire.volume = 0.5
 function pressButton() {
   buttonPressAudio.play()
 }
@@ -271,4 +279,16 @@ function resetDarkMode() {
   bgDarkMode.classList.remove('active')
 }
 
-//card ativo
+//events volume
+volNature.addEventListener('input', () => {
+  bgAudioNature.volume = volNature.value
+})
+volRain.addEventListener('input', () => {
+  bgAudioRain.volume = volRain.value
+})
+volCoffee.addEventListener('input', () => {
+  bgAudioCoffee.volume = volCoffee.value
+})
+volFire.addEventListener('input', () => {
+  bgAudioFire.volume = volFire.value
+})

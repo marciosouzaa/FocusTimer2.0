@@ -103,8 +103,33 @@ button svg{
 }
 .card svg{
   position: absolute;
-  top: 4.6rem;
+  top: 2rem;
   right: 4.6rem;
+}
+input{
+  position: absolute;
+  top: 11rem;
+  right: 2.5rem;
+  
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 9rem;
+  border-radius: 5rem;
+ }
+ input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 5rem;
+  background: var(--icon-color);
+  margin-top: -.6rem;
+
+}
+input::-webkit-slider-runnable-track {
+  height: 0.4rem;
+  background: #323238;
+  border-radius: 5rem;
 }
 .card:hover, .card:hover svg path, .card.active svg path, .card.active{
   opacity: 0.8;
